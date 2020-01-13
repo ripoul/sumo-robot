@@ -121,7 +121,12 @@ public class MainActivity extends AppCompatActivity {
         }
 
         knownDevices = new ArrayList<>( bluetoothAdapter.getBondedDevices() );
-        ArrayAdapter<BluetoothDevice> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, knownDevices);
+        ArrayList<String> knownDevicesName = new ArrayList();
+        for (BluetoothDevice knownDevice : knownDevices) {
+            knownDevicesName.add(knownDevice.getName());
+        }
+        System.out.println("coucou");
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, knownDevicesName);
         deviceList.setAdapter(adapter);
         deviceList.setOnItemClickListener( deviceListListener );
     }
