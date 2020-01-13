@@ -32,16 +32,38 @@ void setup() {
 void loop() {
   
   if (Serial.available() > 0) {serialA = Serial.read();Serial.println(serialA);}
-  digitalWrite(in3, LOW);
-  digitalWrite(in4, HIGH);
-  digitalWrite(in1, LOW);
-  digitalWrite(in2, HIGH);
-  delay(500);
-  digitalWrite(in3, HIGH);
-  digitalWrite(in4, LOW);
-  digitalWrite(in1, HIGH);
-  digitalWrite(in2, LOW);
-  delay(500);
-
-  
+  switch(serialA){
+    case 'a':
+      analogWrite(enA, 200);
+      digitalWrite(in1, LOW);
+      digitalWrite(in2, HIGH);
+      break;
+    case 'b':
+      analogWrite(enA, 0);
+      break;
+    case 'c':
+      analogWrite(enA, 200);
+      digitalWrite(in1, HIGH);
+      digitalWrite(in2, LOW);
+      break;
+    case 'd':
+      analogWrite(enA, 0);
+      break;
+    case 'e':
+      analogWrite(enB, 200);
+      digitalWrite(in3, LOW);
+      digitalWrite(in4, HIGH);
+      break;
+    case 'f':
+      analogWrite(enB, 0);
+      break;
+    case 'g':
+      analogWrite(enB, 200);
+      digitalWrite(in3, HIGH);
+      digitalWrite(in4, LOW);
+      break;
+    case 'h':
+      analogWrite(enB, 0);
+      break;
+  }  
 }
