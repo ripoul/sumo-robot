@@ -14,7 +14,7 @@ Usually those robots have an IA for the fighting parts but not ours. We created 
 
 # :hammer: Installation
 
-## Arduino
+## Robots
 
 You can find the electric scheme of the project in the `/docs` folder. 
 
