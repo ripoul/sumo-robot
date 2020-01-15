@@ -12,9 +12,9 @@ Usually those robots have an IA for the fighting parts but not ours. We created 
 - some wheel and motors (example for us : [motors](https://www.gotronic.fr/art-paire-de-motoreducteurs-dg01d-18760.htm) and [wheel](https://www.gotronic.fr/art-paire-de-roues-jaunes-eco-dgr002-18762.htm))
 - dual H-Bridge motor driver L298N ([L298N](https://www.gotronic.fr/art-commande-de-2-moteurs-sbc-motodriver2-27418.htm))
 
-# Installation
+# :hammer: Installation
 
-## Arduino
+## Robots
 
 You can find the electric scheme of the project in the `/docs` folder. 
 
