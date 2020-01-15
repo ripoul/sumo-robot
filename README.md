@@ -23,6 +23,7 @@ You can find the electric scheme of the project in the `/docs` folder.
 </p>
 
 The program for controling the sumo robot is in the `/sumo-robot/sumo-robot.ino` file.
+You can use the `prog-bt.ino` program to configure the hc-05 bluetooth module (name and password for example).
 
 ## Android
 

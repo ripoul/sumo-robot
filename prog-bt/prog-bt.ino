@@ -7,6 +7,12 @@ Wirering : hc05 -> arduino
 - GND -> pin GND
 - TXD -> pin 10
 - RXD -> pin 11
+
+Command example : 
+AT
+AT+VERSION?
+AT+NAME=MYBLUE
+AT+PSWD=2987
 */
 
 
